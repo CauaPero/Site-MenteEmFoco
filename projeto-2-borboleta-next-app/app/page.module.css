@@ -1,0 +1,107 @@
+.container1, .container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.introCard {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 750px; 
+  margin: 0 auto; 
+  padding: 3rem 4rem; 
+  transition: none; 
+}
+
+.introLeft {
+  flex-shrink: 0; 
+  flex-basis: 45%; 
+  text-align: left;
+  margin-right: 2rem; 
+}
+
+.introLeft h2 {
+  margin-bottom: 1.2rem; 
+  font-size: 2.5rem; 
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.introLeft #big1 {
+    color: #b40202; 
+}
+
+.introLeft #big2 {
+    color: #c9003c; 
+}
+
+.introLeft #big3 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem !important;
+  color: #c9003c; 
+}
+
+.introRight {
+  flex-shrink: 0; 
+  padding-left: 1rem;
+}
+
+.introRight img {
+  width: 250px; 
+  height: auto;
+  margin: 0; 
+}
+
+.intro {
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.intro .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro img {
+  max-width: 300px;
+  width: 100%;
+}
+
+
+@media (max-width: 900px) {
+  .introCard {
+    max-width: 100%;
+    flex-direction: column; 
+    text-align: center; 
+    padding: 2rem 1.5rem; 
+  }
+
+  .introLeft {
+    flex-basis: auto;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .introRight {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; 
+    }
+}

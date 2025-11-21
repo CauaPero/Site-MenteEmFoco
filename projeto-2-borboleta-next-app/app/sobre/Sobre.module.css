@@ -1,0 +1,99 @@
+.cardPrincipal {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secundaria {
+    display: flex;
+    align-items: center; 
+    gap: 3rem; 
+    margin: 3rem 0; 
+}
+
+.secundaria.invertida {
+    flex-direction: row-reverse; 
+}
+
+.texto {
+    flex: 1; 
+    min-width: 280px;
+    line-height: 1.8; 
+}
+
+.imagem {
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+    flex-shrink: 0; 
+}
+
+.sobre {
+    margin-top: 4rem;
+    text-align: center; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center; 
+}
+
+.cards .card {
+    width: auto;
+    min-width: 150px;
+    padding: 0.8rem 1.5rem;
+    
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    box-shadow: none;
+    
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    cursor: default;
+    transition: background-color 0.2s;
+}
+
+.cards .card:hover {
+    transform: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.aviso {
+    margin: 2rem auto; 
+    padding: 1rem;
+    max-width: 700px; 
+    background-color: #FF5451; 
+    color: #ffffff; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .secundaria {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .secundaria.invertida {
+        flex-direction: column; 
+    }
+    
+    .imagem {
+        max-width: 250px; 
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}

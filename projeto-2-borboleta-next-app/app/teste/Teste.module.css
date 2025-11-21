@@ -1,0 +1,77 @@
+.cardPrincipal {
+    background-color: white; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardPrincipal h2 {
+    text-align: center;
+    color: #c9003c; 
+    margin-bottom: 2rem;
+}
+
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.perguntaCard {
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.perguntaCard p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #b40202; 
+    margin-bottom: 1rem;
+}
+
+.perguntaCard label {
+    display: block; 
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.perguntaCard input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.botaoFinalizar {
+    display: block;
+    width: 200px;
+    padding: 0.8rem;
+    margin: 2rem auto 1rem auto; 
+    background-color: #b40202; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.botaoFinalizar:hover {
+    background-color: #b40202;
+}
+
+.resultado {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .cardPrincipal {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}

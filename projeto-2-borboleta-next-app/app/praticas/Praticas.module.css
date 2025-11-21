@@ -1,0 +1,134 @@
+.cardPrincipal {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intro .text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.intro h4 {
+    font-size: 1.5rem;
+    color: #b40202;
+    margin-bottom: 1rem;
+}
+
+.imagemResp {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.imagemResp img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+}
+
+.containerCards .card {
+    padding: 1.5rem;
+    text-align: left;
+    
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.containerCards .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerCards h2 {
+    font-size: 1.1rem;
+    color: #b40202;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.containerCards ul {
+    list-style: disc;
+    margin-left: 1.2rem;
+    padding-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.containerCards ul li {
+    margin-bottom: 0.5rem;
+}
+
+.youtubeContainer {
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 56.25%; 
+    margin: 0 auto 3rem auto;
+}
+
+.youtubeContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+@media (max-width: 1400px) {
+    .containerCards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+    .cardPrincipal {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    
+    .intro .text {
+        text-align: left;
+    }
+
+    .imagemResp img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 550px) {
+    .containerCards {
+        grid-template-columns: 1fr; 
+    }
+}
